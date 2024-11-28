@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_fastfood"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/nameTextViewTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textNameTextView"
+        android:layout_below="@id/imageViewIV"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/descriptionTextViewTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textDescriptionTextView"
+        android:layout_below="@id/nameTextViewTV"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/buttonBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textButtonBTN"
+        android:layout_below="@id/descriptionTextViewTV"
+        android:layout_centerInParent="true"/>
+
+    <RadioGroup
+        android:id="@+id/idRGgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:layout_alignParentBottom="true">
+
+    <!--radio button for light theme-->
+    <RadioButton
+        android:id="@+id/idRBLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="Light" />
+
+    <!--radio button for dark theme-->
+    <RadioButton
+        android:id="@+id/idRBDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:text="Dark" />
+    </RadioGroup>
+</RelativeLayout>
